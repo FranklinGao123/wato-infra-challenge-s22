@@ -15,3 +15,37 @@ URL to my image on Docker Hub: https://hub.docker.com/r/franklingao123/hello-wor
 [Terraform File](https://github.com/FranklinGao123/wato-infra-challenge-s22/blob/master/aws/main.tf)
 
 EC2 Instance's Public IP: http://ec2-18-208-239-233.compute-1.amazonaws.com:3000/
+
+## Discussion Questions
+
+Why use Docker for this?
+
+-   Docker allows for running the same image across different evironments and platforms
+
+Why use Terraform for this?
+
+-   Terraform allows for infrastructure as code (IaC)
+-   Managing and provisioning code can be automated instead of being done manually
+-   Mitigates human error and easier version control
+
+How can we improve this further?
+
+-   See line 44-53 for the automation code (not tested yet)
+-   Automatically installs docker and starts the container
+-   Create a custom ami, on top of the Ubuntu image, you can install docker so it wouldn't have to be done everytime the VM starts
+
+How would you automate the step where you had to ssh into the EC2 server and start the container?
+
+-   See line 44-53 in main.tf for the automation code (not tested yet)
+
+Are there any other tools we could use instead of Docker or Terraform for this?
+
+-   Instead of Terraform, you could you AWS CLI or AWS CloudFormation
+-   Instead of Docker, you could Kubernetes/Openshift
+-   For automation, Ansible could also be used instead of Terraform
+
+In what situations would you use them over our current tools?
+
+-   Terraform works for many service providers while AWS CLI and AWS CloudFormation are strictly targeted for managing AWS services
+-   In general Docker is used for more small sizes due to its scalibility and orchestration while Kubernetes are used for enterprise level sizes
+-   Ansible is better at automation and deployment while Terraform is better at managing infrastructure

@@ -42,7 +42,7 @@ resource "aws_instance" "vm" {
   tags = { "Name": var.studentID }
 
 # Automation but not tested
-#   user_data = <<EOF
+#   user_data = <<EOT
 # sudo apt-get update
 # sudo apt-get install ca-certificates curl gnupg lsb-release
 # curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -50,7 +50,7 @@ resource "aws_instance" "vm" {
 # sudo apt-get update
 # sudo apt-get install docker-ce docker-ce-cli containerd.io
 # sudo docker run -d -p 3000:3000 franklingao123/hello-world
-# EOF
+# EOT
 
 }
 
