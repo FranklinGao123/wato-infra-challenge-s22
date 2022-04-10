@@ -36,7 +36,7 @@ How can we improve this further?
 
 How would you automate the step where you had to ssh into the EC2 server and start the container?
 
--   See line 44-53 in main.tf for the automation code (not tested yet)
+-   See line 44-53 in [main.tf](https://github.com/FranklinGao123/wato-infra-challenge-s22/blob/master/aws/main.tf) for the automation code (not tested yet)
 
 Are there any other tools we could use instead of Docker or Terraform for this?
 
