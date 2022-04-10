@@ -46,5 +46,5 @@ Are there any other tools we could use instead of Docker or Terraform for this?
 In what situations would you use them over our current tools?
 
 -   Terraform works for many service providers while AWS CLI and AWS CloudFormation are strictly targeted for managing AWS services
--   In general Docker is used for more small-sizing due to its scalability and orchestration while Kubernetes are used for enterprise level-sizing
+-   In general Docker is used for more small-sizing due to its scalability and orchestration while Kubernetes/Openshift are used for the enterprise-level
 -   Ansible is better at automation and deployment while Terraform is better at managing infrastructure
