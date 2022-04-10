@@ -31,7 +31,6 @@ Why use Terraform for this?
 How can we improve this further?
 
 -   See line 44-53 for the automation code (not tested yet)
--   Automatically installs docker and starts the container
 -   Create a custom ami, on top of the Ubuntu image, you can install docker so it wouldn't have to be done everytime the VM starts
 
 How would you automate the step where you had to ssh into the EC2 server and start the container?
